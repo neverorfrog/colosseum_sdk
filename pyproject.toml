@@ -18,3 +18,13 @@ numpy = ">=2.4.6,<3"
 
 [tool.pixi.pypi-dependencies]
 colosseum_sdk = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+sim = {cmd = "python -m colosseum_sdk.simulation"}
+
+[tool.ty.environment]
+extra-paths = ["typings"]
+
+[tool.ty.src]
+include = ["src", "tests"]
+exclude = ["typings"]
