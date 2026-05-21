@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 
 @dataclass
 class InitStateCfg:
-    pos: tuple[float, float, float] = (0.0, 0.0, 0.92)
+    pos: tuple[float, float, float] = (0.0, 0.0, 0.643)
     rot: tuple[float, float, float, float] = (1.0, 0.0, 0.0, 0.0)  # quaternion wxyz
     # None → use robot_cfg.default_joint_pos; otherwise a regex-pattern dict (first match wins).
     joint_pos: dict[str, float] | None = None

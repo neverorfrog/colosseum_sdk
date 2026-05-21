@@ -21,6 +21,7 @@ colosseum_sdk = { path = ".", editable = true }
 
 [tool.pixi.tasks]
 sim = {cmd = "python -m colosseum_sdk.simulation"}
+dajeromadaje = {cmd = "python -m examples.dajeromadaje"}
 
 [tool.ty.environment]
 extra-paths = ["typings"]

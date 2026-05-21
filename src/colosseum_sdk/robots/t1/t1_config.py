@@ -38,7 +38,6 @@ class T1RobotCfg(RobotCfg):
             xml_path=_HERE / "t1.xml",
             joint_names=JOINT_NAMES,
             # Observation zero-point: obs[6:29] = joint_pos - default_joint_pos.
-            # Values from arena T1VelocitySymmetric.cpp default_joint_pos.
             default_joint_pos={
                 "AAHead_yaw": 0.0,
                 "Head_pitch": 0.0,
