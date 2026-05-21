@@ -1,6 +1,6 @@
 [project]
 dependencies = ["mujoco>=3.8.1,<4", "mjviser>=0.0.14,<0.0.15"]
-name = "pixi-py"
+name = "colosseum_sdk"
 requires-python = ">= 3.11"
 version = "0.1.0"
 
@@ -15,3 +15,6 @@ platforms = ["osx-arm64", "win-64", "linux-64", "osx-64"]
 [tool.pixi.dependencies]
 onnxruntime = ">=1.22.2,<2"
 numpy = ">=2.4.6,<3"
+
+[tool.pixi.pypi-dependencies]
+colosseum_sdk = { path = ".", editable = true }
